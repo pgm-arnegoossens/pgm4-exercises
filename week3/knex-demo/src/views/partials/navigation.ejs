@@ -1,0 +1,15 @@
+<nav>
+  <div class="logo">
+    Knex Demo
+  </div>
+  
+  <ul>
+    <% menuItems.forEach(function(item) { %>
+      <li>
+        <a href="<%= item.url %>" target="<%= item.target %>">
+          <%= item.label %>
+        </a>
+      </li>
+    <% }); %>
+  </ul>
+</nav>

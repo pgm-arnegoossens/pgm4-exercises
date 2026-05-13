@@ -1,0 +1,31 @@
+{
+  "name": "knex-demo",
+  "version": "1.0.0",
+  "description": "This is a demo project for Knex.js",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "db:up": "knex migrate:latest",
+    "db:down": "knex migrate:rollback",
+    "db:seed": "knex seed:run",
+    "start:dev": "nodemon  --config nodemon.json --env-file=.env ./src/app.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Frederick Roegiers",
+    "email": "frederick.roegiers@arteveldehs.be"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "knex": "^3.2.10",
+    "objection": "^3.1.5",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

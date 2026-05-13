@@ -1,0 +1,8 @@
+<h2>Dinosaurs</h2>
+<ul>
+  <% for (const dino of dinosaurs) { %>
+    <li><%= dino.id %>: <a href="/dinosaurs/<%= dino.slug %>"><%= dino.name %></a></li>
+  <% } %>
+</ul>
+
+<h1><%- emojify("Aardonyx", "highlight") %></h1>

@@ -1,9 +1,13 @@
 import path from "path";
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export const getHomePage = (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "views", "index.html"));
-}
+export const home = (req, res) => {
+  const data = {
+    title: "Leuke titel",
+  };
+
+  res.render("pages/home", data);
+};

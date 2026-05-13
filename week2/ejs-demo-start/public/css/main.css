@@ -1,0 +1,102 @@
+/**
+ * Import other CSS
+ */
+
+ @import url("reset.css");
+
+ body {
+   background-color: rgb(227, 227, 227);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ h1 {
+   color: #353535;
+   text-align: center;
+ }
+ 
+ h2 {
+   color: blue;
+ }
+ 
+ h3 {
+   font-style: italic;
+   margin-bottom: 1rem;
+ }
+ 
+ /* nav */
+ .primary {
+   background-color: #353535;
+   color: white;
+   padding: 1rem;
+   text-align: center;
+   margin-bottom: 1rem;
+ }
+ 
+ .primary a {
+   color: white;
+   text-decoration: none;
+   margin: 0 1rem;
+   font-weight: 700;
+   padding: 0.5rem 1rem;
+   display: inline-block;
+   background-color: #161616;
+   border: 1px solid white;
+   transition: all 0.3s;
+ }
+ 
+ .primary a:hover {
+   background-color: #4d4d4d;
+   transform: scale(1.1);  
+ }
+ 
+ main {
+   background-color: white;
+   margin: 1rem 1rem 4rem 1rem;
+   padding: 1rem;
+ }
+ 
+ footer {
+   text-align: center;
+   margin-top: 1rem;
+   padding: 1rem;
+   background-color: #353535;
+   color: white;
+ }
+ 
+ .icon {
+   font-size: 10rem;
+ }
+ 
+ .dinos {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap ;
+ }
+ 
+ .dinos li {
+   text-align: center;
+   flex-basis: 40%;
+   border: 1px solid black;
+   margin: 2px;
+   padding: 1rem;
+   background-color: white;
+ }
+ 
+ .dinos li.green {
+   background-color: lightgreen;
+  }
+ 
+  .dinos li.red {
+   background-color: lightcoral;
+  
+  }
+ 
+ .dinos img {
+   height: 200px;
+   margin: 1rem auto;
+ }
+ 
+ .btn {
+   background-color: red;
+ }
